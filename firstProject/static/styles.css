@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+h1,h2 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.heading {
+    font-family: cursive;
+}
+
+.heading__sub {
+    font-family: cursive;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    height: 20rem;
+}
+
+ul {
+    margin: 3rem auto;
+    padding-left: 0;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    gap: 5rem;
+    border-bottom: 5px solid rgb(255, 115, 0);
+    list-style: none;
+}
+
+.buttons {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.buttons:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.blogs-grid {
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.blogs-card {
+    display: flex;
+    background-color: #333;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.blogs-card__heading {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.text {
+    padding: 1rem;
+}
+
+.card-img {
+    width: 20rem;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .blogs-grid {
+        margin: 2rem 10%;
+    }
+    
+}
