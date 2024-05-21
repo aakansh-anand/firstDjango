@@ -1,5 +1,8 @@
 # First Django Project
-### Dependencies
+### Dependencies with pip install
 - Python 3.11
 - Django 5.0.6
 - pip 23.0.1
+- django-tailwind
+- 'django-tailwind[reload]'
+- 'NPM path is necessary so make sure you have node.js installed'
