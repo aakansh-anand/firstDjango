@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {% block title %}
+      default value
+    {% endblock %}
+  </title>
+  <link rel="shortcut icon" href="{% static 'favicon.ico'%}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'styles.css'%}"></link>
+</head>
+<body>
+  <img src="{%static 'images/chaicode-logo.webp' %}" alt="Chai aur Code" class="logo">
+  <h1 class="heading"><span class="heading-chai">Chai</span> aur Django</h1>
+  <ul style="border-bottom: none;">
+    <li>
+      <a href="/" class="buttons">Home</a>
+    </li>
+
+    <li>
+      <a href="/blogs/" class="buttons">Blogs</a>
+    </li>
+
+    <li>
+      <a href="/chai/" class="buttons">Chai</a>
+    </li>
+  </ul>
+  {% block content %}
+    
+  {% endblock %}
+</body>
+</html>

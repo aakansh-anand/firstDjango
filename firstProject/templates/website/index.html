@@ -1,26 +1,5 @@
-{% load static %}
+{% extends "layout.html" %}
+{% block title %}
+  Home page
+{% endblock %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chai aur Django | First Project</title>
-  <link rel="stylesheet" href="{% static 'styles.css'%}"></link>
-  <link rel="shortcut icon" href="{% static 'favicon.ico'%}" type="image/x-icon">
-</head>
-<body>
-  <img src="{%static 'images/chaicode-logo.webp' %}" alt="Chai aur Code" class="logo">
-  <h1 class="heading"><span class="heading-chai">Chai</span> aur Django</h1>
-  <h2 class="heading__sub">Jinja Template - Home page</h2>
-  <ul>
-    <li>
-      <a href="" class="buttons">Home</a>
-    </li>
-
-    <li>
-      <a href="blogs/" class="buttons">Blogs</a>
-    </li>
-  </ul>
-</body>
-</html>

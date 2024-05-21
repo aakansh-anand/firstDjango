@@ -1,59 +1,42 @@
-{% load static %}
+{% extends "layout.html" %}
+{% block title %}
+  Blogs
+{% endblock %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chai aur Django | First Project</title>
-  <link rel="stylesheet" href="{% static 'styles.css'%}"></link>
-  <link rel="shortcut icon" href="{% static 'favicon.ico'%}" type="image/x-icon">
-</head>
-<body>
-  <img src="{%static 'images/chaicode-logo.webp' %}" alt="Chai aur Code" class="logo">
-  <h1 class="heading"><span class="heading-chai">Chai</span> aur Django</h1>
-  <ul>
-    <li>
-      <a href="../" class="buttons">Home</a>
-    </li>
-
-    <li>
-      <a href="" class="buttons">Blogs</a>
-    </li>
-  </ul>
-  <h2 class="heading__sub">Blogs</h2>
-  <div class="blogs-grid">
-    <div class="blogs-card">
-        <img src="https://chaicode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1715694656019%2F68fd734b-b12e-4176-9842-eac78082649a.png&w=1920&q=75" alt="Django Blog Jinja" class="card-img">
-        <div class="text">
-            <h3 class="blogs-card__heading">Blog heading</h3>
-            <p class="blogs-card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatum. Esse consequatur quaerat at recusandae omnis sunt quam unde! Reiciendis laborum mollitia expedita natus, corporis asperiores optio repudiandae dignissimos facere delectus unde libero enim inventore a consectetur. Doloribus, consequatur dolor.</p>
-        </div>
-    </div>
-
-    <div class="blogs-card">
-        <img src="https://chaicode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1715597863148%2Fbd09ef9f-6953-4e32-8438-cbf9df4cbb6a.png&w=1920&q=75" alt="Django Blog Jinja" class="card-img">
-        <div class="text">
-            <h3 class="blogs-card__heading">Blog heading</h3>
-            <p class="blogs-card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatum. Esse consequatur quaerat at recusandae omnis sunt quam unde! Reiciendis laborum mollitia expedita natus, corporis asperiores optio repudiandae dignissimos facere delectus unde libero enim inventore a consectetur. Doloribus, consequatur dolor.</p>
-        </div>
-    </div>
-
-    <div class="blogs-card">
-        <img src="https://chaicode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1714686128844%2Fc218f9cd-a484-49db-b932-d6dea33ce509.png&w=1920&q=75" alt="Django Blog Jinja" class="card-img">
-        <div class="text">
-            <h3 class="blogs-card__heading">Blog heading</h3>
-            <p class="blogs-card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatum. Esse consequatur quaerat at recusandae omnis sunt quam unde! Reiciendis laborum mollitia expedita natus, corporis asperiores optio repudiandae dignissimos facere delectus unde libero enim inventore a consectetur. Doloribus, consequatur dolor.</p>
-        </div>
-    </div>
-
-    <div class="blogs-card">
-        <img src="https://chaicode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1712735688314%2F1e82d638-bb10-47aa-9b04-3c3212fe98d8.png&w=1920&q=75" alt="Django Blog Jinja" class="card-img">
-        <div class="text">
-            <h3 class="blogs-card__heading">Blog heading</h3>
-            <p class="blogs-card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatum. Esse consequatur quaerat at recusandae omnis sunt quam unde! Reiciendis laborum mollitia expedita natus, corporis asperiores optio repudiandae dignissimos facere delectus unde libero enim inventore a consectetur. Doloribus, consequatur dolor.</p>
-        </div>
-    </div>
+{% block content %}
+<h2 class="heading__sub">Blogs</h2>
+<div class="blogs-grid">
+  <div class="blogs-card">
+      <img src="https://chaicode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1715694656019%2F68fd734b-b12e-4176-9842-eac78082649a.png&w=1920&q=75" alt="Django Blog Jinja" class="card-img">
+      <div class="text">
+          <h3 class="blogs-card__heading">Blog heading</h3>
+          <p class="blogs-card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatum. Esse consequatur quaerat at recusandae omnis sunt quam unde! Reiciendis laborum mollitia expedita natus, corporis asperiores optio repudiandae dignissimos facere delectus unde libero enim inventore a consectetur. Doloribus, consequatur dolor.</p>
+      </div>
   </div>
-</body>
-</html>
+
+  <div class="blogs-card">
+      <img src="https://chaicode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1715597863148%2Fbd09ef9f-6953-4e32-8438-cbf9df4cbb6a.png&w=1920&q=75" alt="Django Blog Jinja" class="card-img">
+      <div class="text">
+          <h3 class="blogs-card__heading">Blog heading</h3>
+          <p class="blogs-card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatum. Esse consequatur quaerat at recusandae omnis sunt quam unde! Reiciendis laborum mollitia expedita natus, corporis asperiores optio repudiandae dignissimos facere delectus unde libero enim inventore a consectetur. Doloribus, consequatur dolor.</p>
+      </div>
+  </div>
+
+  <div class="blogs-card">
+      <img src="https://chaicode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1714686128844%2Fc218f9cd-a484-49db-b932-d6dea33ce509.png&w=1920&q=75" alt="Django Blog Jinja" class="card-img">
+      <div class="text">
+          <h3 class="blogs-card__heading">Blog heading</h3>
+          <p class="blogs-card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatum. Esse consequatur quaerat at recusandae omnis sunt quam unde! Reiciendis laborum mollitia expedita natus, corporis asperiores optio repudiandae dignissimos facere delectus unde libero enim inventore a consectetur. Doloribus, consequatur dolor.</p>
+      </div>
+  </div>
+
+  <div class="blogs-card">
+      <img src="https://chaicode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1712735688314%2F1e82d638-bb10-47aa-9b04-3c3212fe98d8.png&w=1920&q=75" alt="Django Blog Jinja" class="card-img">
+      <div class="text">
+          <h3 class="blogs-card__heading">Blog heading</h3>
+          <p class="blogs-card__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatum. Esse consequatur quaerat at recusandae omnis sunt quam unde! Reiciendis laborum mollitia expedita natus, corporis asperiores optio repudiandae dignissimos facere delectus unde libero enim inventore a consectetur. Doloribus, consequatur dolor.</p>
+      </div>
+  </div>
+</div>
+
+{% endblock %}
