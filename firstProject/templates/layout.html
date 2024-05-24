@@ -8,7 +8,7 @@
   <title>
     {% block title %}
       default value
-    {% endblock %}
+    {% endblock %} | Chai aur Django
   </title>
   <link rel="shortcut icon" href="{% static 'favicon.ico'%}" type="image/x-icon">
   <link rel="stylesheet" href="{% static 'styles.css'%}"></link>
@@ -22,6 +22,9 @@
     <span class="font-mono">Django</span></h1>
   <ul class="border-b-0 mx-auto my-10">
     <li>
+      <a href="/admin/" class="buttons">Admin</a>
+    </li>
+    <li>
       <a href="/" class="buttons">Home</a>
     </li>
 
@@ -30,7 +33,11 @@
     </li>
 
     <li>
-      <a href="/chai/" class="buttons">Chai</a>
+      <a href="/topics/" class="buttons">Topics</a>
+    </li>
+
+    <li>
+      <a href="/topics/all-chai/" class="buttons">All chai</a>
     </li>
   </ul>
   {% block content %}

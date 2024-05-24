@@ -6,3 +6,4 @@
 - django-tailwind
 - 'django-tailwind[reload]'
 - 'NPM path is necessary so make sure you have node.js installed'
+- python -m pip install Pillow, it is a necessary command that is needed for handling images.

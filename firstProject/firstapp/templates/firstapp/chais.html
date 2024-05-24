@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %} Video Series {% endblock %} 
+
+{% block content %}
+<h2 class="heading__sub mb-10">List of all the data stored into the database.</h2>
+<h2 class="heading__sub mb-10">All The Videos in Series</h2>
+<div class="blogs-grid">
+  {% for chai in chais %}  
+  <div class="blogs-card">
+      <img src={{chai.image.url}} alt="Django Blog Jinja" class="card-img max-w-[350px] rounded-l-lg">
+      <div class="text">
+        <h3 class="py-5 text-xl ">{{chai.name}}</h3>
+        <p class="  ">{{chai.description}}</p>
+        <a href={{chai.video}} target="_blank" class="bg-white text-black inline-block mt-5 py-2 px-3 rounded-xl hover:outline-white hover:outline hover:text-white hover:bg-transparent">Watch now</a>
+      </div>
+  </div>
+  {% endfor %}
+{% endblock %}
+
+
